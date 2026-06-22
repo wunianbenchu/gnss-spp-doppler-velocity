@@ -1,5 +1,3 @@
-# gnss-spp-doppler-velocity
-C language implementation of GNSS GPS single point positioning (SPP) and Doppler velocity measurement, including RINEX observation file and broadcast ephemeris parsing, least squares positioning solution.
 # GNSS SPP 单点定位与多普勒测速
 ## 项目简介
 本项目基于C语言实现了GPS单系统标准单点定位（SPP）与多普勒频移测速算法，完整支持RINEX格式观测数据与广播星历的解析，通过加权最小二乘迭代解算接收机的三维位置与三维速度，可用于卫星导航原理教学验证、实验数据处理与算法二次开发。
