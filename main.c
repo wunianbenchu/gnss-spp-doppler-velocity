@@ -1353,8 +1353,8 @@ int main() {
                     double RT[9];
                     mat_trans_3x3(R_enu, RT);
                     double temp[9], Q_ENU[9];
-                    mat_mul_3x3(RT, Q_vel, temp);
-                    mat_mul_3x3(temp, R_enu, Q_ENU);
+                    mat_mul_3x3(R_enu, Q_vel, temp);
+                    mat_mul_3x3(temp, RT, Q_ENU);
 
                     sigma_E = sigma0 * sqrt(fabs(Q_ENU[0]));
                     sigma_N = sigma0 * sqrt(fabs(Q_ENU[4]));
